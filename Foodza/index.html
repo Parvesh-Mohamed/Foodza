@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equi="refresh" content="10">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>FOODZA</title>
+<link rel="icon" href="icon-white.png" type="image/icon type">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<style>
+*::-webkit-scrollbar{
+    display: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+/*body*/
+body{
+  background-image: url("https://technext.github.io/coffee1/images/bg_4.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: "Arial Narrow";
+}
+/*nav*/
+nav{
+  position: ;
+  width: 100%;
+  overflow: hidden;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  text-align:center;
+  background-color:#000000;
+  overflow: hidden;
+}
+nav ul li{
+  font-family: "Bahnschrift Condensed";
+  display:inline-block;
+  width:100px;
+  letter-spacing: 2px;
+}
+nav li a{
+  text-decoration: none;
+  color:white;
+  padding:20px;
+  display: block;
+}
+nav li a:hover{
+  font-size:20px;
+  color: #c49b63;
+  padding: 0px;
+  transition: 0.2s;
+}
+h2{
+  float: left;
+  position: relative;
+  padding-left: 50px;
+  color: #c49b63;
+  padding-top: 0px;
+}
+.kart{
+  width: 50px;
+  height: 50px;
+  float: right;
+  padding-top: 6px;
+  padding-right: 15px;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  float: right;
+  padding-top: 6px;
+  padding-right: 20px;
+}
+.brand{
+  width: 40px;
+  height: 40px;
+  float: left;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+.brandname{
+  width: 120px;
+  height: 40px;
+  float: left;
+  padding-left:0px;
+  padding-top: 10px;
+}
+/*top background*/
+div[class=top] img[class=brand]{
+  height: 100px;
+  width: 100px;
+  float: inherit;
+  padding-right: 6%;
+}
+div[class=top] p[class=des]{
+  color: white;
+  font-size: 20px;
+  font-family: "Arial Narrow";
+  line-height: 30px;
+  text-align: justify;
+  margin: 50px;
+}
+div[class=top]{
+  background-image: url("resta.jpg");
+  background-attachment: scroll;
+  overflow: hidden;
+  background-size: cover;
+  transition-duration: 2s;
+}
+/*HOME*/
+.heading{
+  color: gray;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-family: "Lucida Handwriting";
+}
+hr.hr{
+  border: 2px solid #c49b63;
+}
+div[class=sign] img[class=tara]{
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 40%;
+  height: 550px;
+  float: left;
+  clear: left;
+  border-radius: 100px;
+}
+div[class=tarachick]{
+  margin-left: 100px;
+  color: white;
+  font-family: "Arial Narrow";
+}
+div[class=tarachick] h1[id=title]{
+  letter-spacing: 2px;
+  font-family: "Lucida Handwriting";
+}
+div[class=tarachick] h1[id=rate]{
+  color: #c49b63;
+  letter-spacing: 1px;
+}
+div[class=tarachick] p{
+  line-height: 30px;
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 2%;
+  color: gray;
+}
+.quantity{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c49b63;
+  border-collapse: separate;
+  color: #c49b63;
+  padding: 15px;
+  text-align: center;
+  width: 20px;
+  cursor: pointer;
+}
+.addtocart{
+  border-style: solid;
+  border-color: #c49b63;
+  border-width: 1px;
+  border-collapse: separate;
+  color: #c49b63;
+  padding: 15px;
+  text-align: center;
+  width: 20px;
+  cursor: pointer;
+  font-family: "Arial Narrow";
+  background-color: #c49b63;
+  color: black;
+  transition: 0.5s;
+}
+.addtocart:hover{
+  background-color: transparent;
+  color: #c49b63;
+  transition: 0.5s;
+}
+/*MENU*/
+div[class=dish] a{
+  color: #c49b63;
+  text-decoration: none;
+  padding: 20px;
+  font-family: "Arial Narrow";
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #c49b63;
+  overflow: hidden;
+}
+div[class=dish] a:hover{
+  color: black;
+  background-color: #c49b63;
+  transition: 0.5s;
+}
+div[class=dish] a:first-child{
+  color: black;
+  background-color: #c49b63;
+}
+div[class=dish] a:focus{
+  color: black;
+  background-color: #c49b63;
+}
+iframe{
+  height: 1500px;
+  width: 1150px;
+  border: none;
+}
+iframe::-webkit-scrollbar{
+    display: none;
+}
+/*SERVICE*/
+div[class=serve]{
+  background-color: #c49b63;
+  overflow: hidden;
+}
+.servetable{
+  text-align: center;
+  margin: 20px;
+}
+.serviceicon{
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.servicetitle, .servicedes{
+  color: black;
+  font-family: "Arial Narrow";
+  letter-spacing: 1px;
+  text-align: justify-all;
+  margin: 20px;
+}
+/*BLOG*/
+div[class=blogs]{
+  padding-top: 20px;
+}
+div[class=blogs]:hover{
+  padding-top: 0px;
+  box-shadow: 1px 1px 10px gray;
+  cursor: pointer;
+}
+div[class=blogs] img[class=blogimg]{
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+}
+.blogdate, .blogdes{
+  color: gray;
+  text-align: justify-all;
+  letter-spacing: 1px;
+  font-family: "Arial Narrow";
+  width: 200px;
+}
+div[class=blogs] h4[class=blogtitle]{
+  color: white;
+  font-family: "Arial Narrow";
+  letter-spacing: 1px;
+}
+.blogdes{
+  padding-right: 0px;
+  padding-left: 0px;
+  line-height: 25px;
+}
+.blogdate:hover,.blogdes:hover{
+  color: #c49b63;
+}
+div[class=pagination] button{
+  background: transparent;
+  color: #c49b63;
+  border: 1px solid #c49b63;
+  border-radius: 50px;
+  padding: 20px;
+  font-family: "Arial Narrow";
+  cursor: pointer;
+}
+div[class=pagination] button:nth-child(2){
+  background-color: #c49b63;
+  color: black;
+}
+/*About*/
+div[class=aboutimg] img{
+  float: left;
+  width: 50%;
+  height: 50%;
+  border-radius: 30px;
+}
+div[class=story]{
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  float: all;
+  margin-left: 53%;
+  margin-right: 2%;
+  height: 360px;
+}
+div[class=story] h1{
+  padding-top: 20px;
+}
+div[class=story] p{
+  color: gray;
+  letter-spacing: 1px;
+  text-align: justify-all;
+  line-height: 30px;
+  font-family: "Arial Narrow";
+  margin-right: 4%;
+  margin-left: 4%;
+}
+table[class=customer]{
+  margin: 50px;
+  vertical-align: middle;
+}
+table[class=customer] img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+table[class=customer] h3{
+  color: gray;
+}
+table[class=customer] p{
+  color: gray;
+  margin-left: 4%;
+}
+div[class=container]{
+  background-image: url("https://c1.wallpaperflare.com/preview/467/176/26/background-food-tasty-olives.jpg");
+  background-size: 100%;
+  box-sizing: border-box;
+}
+div[class=statistics]{
+  float: left;
+  margin: 0px 50px;
+}
+div[class=container]::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 30%;
+}
+div[class=statistics] img{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  transition: 0.2s;
+}
+/*div[class=statistics] img:hover{
+  border: 1px solid #c49b63;
+  background-color: #c49b63;
+  transform: rotate(50deg);
+  transition: 0.2s;
+}*/
+div[class=statistics] h1{
+  color: black;
+  font-family: "Arial Narrow";
+}
+div[class=statistics] h3{
+  color: gray;
+  font-family: "Arial Narrow";
+  letter-spacing: 2px;
+}
+/*Contact*/
+div[class=contact]::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+div[class=contactinfo]{
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  float: left;
+  width: 50%;
+  margin-left: 10px;
+}
+div[class=contactinfo] p{
+  color: #c49b63;
+  font-family: "Arial Narrow";
+  letter-spacing: 1px;
+  text-align: justify-all;
+  padding-left: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+div[class=contactinfo] p[class=contactdes]{
+  color: gray;
+  cursor: auto;
+}
+.phone{
+  background: url("phone.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.location{
+  background: url("location.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.timing{
+  background: url("clock.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.mail{
+  background: url("envelope.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.website{
+  background: url("globe.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding: 10px;
+  margin-left: 20px;
+}
+div[class=booktable]{
+  background-color: #c49b63;
+  float: left;
+  width: 45%;
+  height: 560px;
+  margin-left: 30px;
+  border-radius: 30px;
+}
+div[class=booktable] h2{
+  color: black;
+  font-family: "Arial Narrow";
+  letter-spacing: 1px;
+  margin-left: 50px;
+}
+div[class=booktable] input,textarea{
+  color: black;
+  background-color: #c49b63;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 400px;
+  padding-top: 20px;
+  height: 50px;
+}
+div[class=booktable] input::placeholder,textarea::placeholder{
+  color: black;
+}
+textarea{
+  resize: none;
+}
+div[class=booktable] input:focus,textarea:focus{
+  box-shadow: 0 1px 0 0 black;
+  transition: 0.2s;
+}
+div[class=booktable] input[type=button]{
+  background-color: black;
+  color: #c49b63;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+  <a href="index.html">
+    <img src="icon-removebg-preview.jpg" alt="logo" class="brand">
+    <img src="food-removebg-preview.jpg" alt="domain" class="brandname">
+  </a>
+  <li><a href="#home">HOME</a></li>
+  <li><a href="#menu">MENU</a></li>
+  <li><a href="#service">SERVICE</a></li>
+  <li><a href="#blog">BLOG</a></li>
+  <li><a href="#about">ABOUT</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+  <a href="login.html" target="_blank"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25634105.jpg" alt="login" class="icon"></a>
+  <a href=""><img src="https://thumbs.dreamstime.com/b/shopping-icon-shopping-cart-icon-dark-background-simple-vector-icon-shopping-icon-shopping-cart-icon-dark-background-116659167.jpg" alt="cart" class="kart"></a>
+</ul>
+</nav>
+<div class="top">
+  <center><br>
+    <img src="icon-white.png" alt="logo" class="brand"><br>
+    <img src="tagline-white.png" alt="tagline" class="tag">
+    <p class="des">
+       Foodza offers varieties of delicious recipes and ultimate comfort and luxury rooms. This 4-storied hotel is a beautiful combination of traditional grandeur and modern facilities. The 255 exclusive guest rooms are furnished with a range of modern amenities such as television and internet access. International direct-dial phone and safe are also available in any of these rooms. Wake-up call facility is also available in these rooms
+    </p>
+  </center>
+</div><br><br><br><br><br>
+<h1 id="home" class="heading">&nbsp;&nbsp;HOME</h1><hr class="hr"><br><br><br><br><br>
+<h1 style="text-align: center;font-family: Viner Hand ITC;color: #c49b63;padding-bottom: 40px;">OUR SIGNATURE</h1>
+<div class="sign">
+  <img src="https://www.tasteofhome.com/wp-content/uploads/2019/02/Tara-s-Spanish-Chicken_EXPS_SDAM19_234006_B12_07_6b-1.jpg?fit=700,1024" class="tara">
+</div>
+<div class="tarachick">
+  <h1 id="title">TARA'S SPANISH CHICKEN</h1>
+  <h1 id="rate">&#8377;600</h1>
+  <p>
+    Tara's Spanish Chicken consists of the cooking traditions and practices from Spain. Olive oil (of which Spain is the world's largest producer) is heavily used in Spanish cuisine. It forms the base of many vegetable sauces (known in Spanish as sofritos). Herbs most commonly used include parsley, oregano, rosemary and thyme. The use of garlic has been noted as "common to all Spanish cooking." The most used meats in Spanish cuisine include chicken, pork, lamb and veal. Fish and seafood are also consumed on a regular basis.
+  </p>
+  <table cellspacing="15px">
+    <tr>
+      <td class="quantity" style="font-size: 25px">&#8722;</td>
+      <td class="quantity" style="cursor: auto;">1</td>
+      <td class="quantity" style="font-size: 25px">&#43;</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="addtocart">Add to Cart</td>
+    </tr>
+  </table>
+</div><br><br><br><br><br>
+<h1 id="menu" class="heading">&nbsp;&nbsp;MENU</h1><hr class="hr"><br><br><br><br><br>
+<div class="dish">
+  <center>
+    <a href="maindish.html" target="iframe">Main Dish</a>
+    <a href="drinks.html" target="iframe">Drinks</a>
+    <a href="desserts.html" target="iframe">Desserts</a>
+  </center>
+</div><br><br>
+<center><iframe src="maindish.html" name="iframe"></iframe></center>
+<h1 id="service" class="heading">&nbsp;&nbsp;SERVICE</h1><hr class="hr"><br><br><br><br><br>
+<section><center>
+  <div class="serve"><br><br><br><br>
+    <table class="servetable" align="center">
+      <tr>
+        <td>
+          <img class="serviceicon" src="https://cdn-icons-png.flaticon.com/128/411/411768.png" alt="easy to order">
+        </td>
+        <td>
+          <img class="serviceicon" src="https://cdn2.iconfinder.com/data/icons/thin-delivery/24/thin-1153_delivery_fast_express_shipping-512.png" alt="fastest delivery">
+        </td>
+        <td>
+          <img class="serviceicon" src="https://cdn-icons-png.flaticon.com/512/2011/2011153.png" alt="quality food">
+        </td>
+      </tr>
+      <tr>
+        <td><h3 class="servicetitle">EASY TO ORDER</h3></td>
+        <td><h3 class="servicetitle">FASTEST DELIVERY</h3></td>
+        <td><h3 class="servicetitle">QUALITY FOOD</h3></td>
+      </tr>
+      <tr>
+        <td>
+          <p class="servicedes">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+        </td>
+        <td>
+          <p class="servicedes">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+        </td>
+        <td>
+          <p class="servicedes">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+        </td>
+      </tr>
+    </table><br><br><br><br>
+  </div>
+</section></center>
+<br><br><br><br><br>
+<h1 id="blog" class="heading">&nbsp;&nbsp;BLOG</h1><hr class="hr"><br><br><br><br><br>
+<section>
+  <center>
+  <table style="border-collapse: collapse;" cellpadding="10px">
+    <tr>
+      <td>
+  <div class="blogs">
+  <center><br>
+    <img  class="blogimg" src="https://cdn.loveandlemons.com/wp-content/uploads/2019/01/IMG_16189-580x580.jpg" alt="Caponata">
+    <p class="blogdate">August 31 2020</p>
+    <h4 class="blogtitle">Enjoy your own way</h4>
+    <p class="blogdes">Learn how to make crostini! Topped with fresh garnishes or a creamy spread, these crisp, golden little toasts are the perfect party appetizer.</p><br>
+  </center>
+  </div>
+      </td>
+      <td>
+  <div class="blogs">
+  <center><br>
+    <img  class="blogimg" src="https://cdn.loveandlemons.com/wp-content/uploads/2020/01/baked-ptotato-oven-580x580.jpg" alt="baked-ptotato">
+    <p class="blogdate">August 31 2020</p>
+    <h4 class="blogtitle">Enjoy your own way</h4>
+    <p class="blogdes">Learn how to make crostini! Topped with fresh garnishes or a creamy spread, these crisp, golden little toasts are the perfect party appetizer.</p><br>
+  </center>
+  </div>
+      </td>
+      <td>
+  <div class="blogs">
+  <center><br>
+    <img  class="blogimg" src="https://cdn.loveandlemons.com/wp-content/uploads/2019/09/easy-dinner-ideas-1-580x580.jpg" alt="indian-food">
+    <p class="blogdate">August 31 2020</p>
+    <h4 class="blogtitle">Enjoy your own way</h4>
+    <p class="blogdes">Learn how to make crostini! Topped with fresh garnishes or a creamy spread, these crisp, golden little toasts are the perfect party appetizer.</p><br>
+  </center>
+  </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+  <div class="blogs">
+  <center><br>
+    <img  class="blogimg" src="https://cdn.loveandlemons.com/wp-content/uploads/2022/08/zucchini-brownies-1-580x580.jpg" alt="zucchini-brownies">
+    <p class="blogdate">August 31 2020</p>
+    <h4 class="blogtitle">Enjoy your own way</h4>
+    <p class="blogdes">Learn how to make crostini! Topped with fresh garnishes or a creamy spread, these crisp, golden little toasts are the perfect party appetizer.</p><br>
+  </center>
+  </div>
+      </td>
+      <td>
+  <div class="blogs">
+  <center><br>
+    <img  class="blogimg" src="https://cdn.loveandlemons.com/wp-content/uploads/2022/08/tomato-galette-1-580x580.jpg" alt="zucchini-fritters">
+    <p class="blogdate">August 31 2020</p>
+    <h4 class="blogtitle">Enjoy your own way</h4>
+    <p class="blogdes">Learn how to make crostini! Topped with fresh garnishes or a creamy spread, these crisp, golden little toasts are the perfect party appetizer.</p><br>
+  </center>
+  </div>
+      </td>
+      <td>
+  <div class="blogs">
+  <center><br>
+    <img  class="blogimg" src="https://cdn.loveandlemons.com/wp-content/uploads/2019/02/meal-prep-ideas-580x580.jpg" alt="vegan-hot-dogs">
+    <p class="blogdate">August 31 2020</p>
+    <h4 class="blogtitle">Enjoy your own way</h4>
+    <p class="blogdes">Learn how to make crostini! Topped with fresh garnishes or a creamy spread, these crisp, golden little toasts are the perfect party appetizer.</p><br>
+  </center>
+  </div>
+      </td>
+    </tr>
+  </table>
+  </center>
+</section>
+<center><br><br><br><br>
+  <div class="pagination">
+    <button><</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>></button>
+  </div>
+</center>
+<section>
+  <br><br><br><br><br>
+<h1 id="about" class="heading">&nbsp;&nbsp;ABOUT</h1><hr class="hr"><br><br><br><br><br>
+<div class="aboutimg">
+  <img src="https://restaurantinteriordesign.eu/wp-content/uploads/2018/06/Cold-Drinks-San-Francisco-restaurant.jpg" alt="restaurant interior">
+</div>
+<div class="story">
+  <h1 style="text-align: center;font-family: Viner Hand ITC;color: #c49b63;padding-bottom: 20px;">THE OVEN STORY</h1>
+  <p>
+    The first restaurant proprietor is believed to have been one A. Boulanger, a soup vendor, who opened his business in Paris in 1765. The sign above his door advertised restoratives, or restaurants, referring to the soups and broths available within. The institution took its name from that sign, and restaurant now denotes a public eating place in English, French, Dutch, Danish, Norwegian, Romanian, and many other languages, with some variations.
+  </p>
+</div>
+<center><br><br>
+  <h1 style="text-align: center;font-family: Arial Narrow;color: white; padding-bottom: 20px; font-size: 40px; letter-spacing: 2px;"><span style="font-family: Viner Hand ITC; font-size: 40px; color: #c49b63;">Testimony</span><br>CUSTOMER SAYS</h1>
+  <table class="customer">
+    <tr>
+      <td>
+        <img src="https://images.mubicdn.net/images/cast_member/2184/cache-2992-1547409411/image-w856.jpg?size=800x">
+      </td>
+      <td>
+        <p>
+          “Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Tom Cruise</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg">
+      </td>
+      <td>
+        <p>
+          “Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Dwayne Johnson</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg">
+      </td>
+      <td>
+        <p>
+          “Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Ryan Reynolds</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://www.pinkvilla.com/files/styles/amp_metadata_content_image/public/happy-birthday-emma-watson.jpg">
+      </td>
+      <td>
+        <p>
+          “Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Emma Watson</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Reuni%C3%A3o_com_o_ator_norte-americano_Keanu_Reeves_cropped_2_%2846806576944%29_%28cropped%29.jpg">
+      </td>
+      <td>
+        <p>
+          “Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Keanu Reeves</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://nationaltoday.com/wp-content/uploads/2022/05/107-Johnny-Depp.jpg">
+      </td>
+      <td>
+        <p>
+          “Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Johnny Depp</h3>
+      </td>
+    </tr>
+    <!--<tr>
+      <td>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGdtrXX9rt3Nr-mwNuBP6nGFngQ3u6OtquCbeJOOLP6IZgI6nN">
+      </td>
+      <td>
+        <p>
+          “Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Amber Heard</h3>
+      </td>
+    </tr>-->
+  </table>
+  <div class="container"><center>
+  <div class="statistics">
+    <br><br><br><br><br><br>
+    <img src="hotel.png" alt="branches"><br><br>
+    <h1>100</h1>
+    <h3>Restaurant Branches</h3>
+    <br><br><br><br><br><br>
+  </div>
+  <div class="statistics">
+    <br><br><br><br><br><br>
+    <img src="awards.png" alt="branches"><br><br>
+    <h1>85</h1>
+    <h3>Number of Awards</h3>
+    <br><br><br><br><br><br>
+  </div>
+  <div class="statistics">
+    <br><br><br><br><br><br>
+    <img src="customers.png" alt="branches"><br><br>
+    <h1>10,694</h1>
+    <h3>Happy Customers</h3>
+    <br><br><br><br><br><br>
+  </div>
+  <div class="statistics">
+    <br><br><br><br><br><br>
+    <img src="staffs.png" alt="branches"><br><br>
+    <h1>900</h1>
+    <h3>Staffs</h3>
+    <br><br><br><br><br><br>
+  </div></center>
+  </div>
+</center>
+</section>
+<br><br><br><br><br>
+<h1 id="contact" class="heading">&nbsp;&nbsp;CONTACT</h1><hr class="hr"><br><br><br><br><br>
+<section>
+  <div class="contact">
+  <div class="contactinfo"><br><br>
+    <p class="phone">+ 1235 2355 98</p>
+    <p class="contactdes">24/7 customer support to resolve the issues in a timely and efficient manner.</p>
+    <p class="location">California, USA</p>
+    <p class="contactdes">203 Fake St. Mountain View, San Francisco, California, USA.</p>
+    <p class="timing">Monday-Friday</p>
+    <p class="contactdes">8:00am - 9:00pm</p>
+    <p class="mail">support@foodza.com</p>
+    <p class="contactdes">24/7 customer support to resolve the issues in a timely and efficient manner.</p>
+    <p class="website">www.foodza.com</p>
+    <p class="contactdes">Explore various kinds of recipe and enjoy.</p><br><br>
+  </div>
+  <div class="booktable">
+    <form>
+      <table align="center">
+        <cener><caption><h2>RESERVE TABLE</h2></caption></cener>
+        <tr>
+          <td><input type="text" name="cname" placeholder="Name"></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="phone" placeholder="Phone Number"></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="date" placeholder="Date" onfocus="(this.type='date')"></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="time" placeholder="Time" onfocus="(this.type='time')"></td>
+        </tr>
+        <tr>
+          <td><textarea placeholder="Type your message here..."></textarea></td>
+        </tr>
+      </table>
+      <center><caption><input type="button" name="btn" value="BOOK"></caption></center>
+    </form>
+  </div>
+  </div>
+</section><br><br>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Payment Options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Cooked</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Quality</a></li>
+          <li><a href="#">Foods</a></li>
+          <li><a href="#">Online Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <p>Copyright © 2023 All rights reserved</p><br><br>
+  </div>
+</body>
+</html>
