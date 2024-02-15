@@ -1,0 +1,62 @@
+body{
+  background-image: url("https://technext.github.io/coffee1/images/bg_4.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: "Arial Narrow";
+}
+table{
+	text-align: center;
+	padding: 0px;
+	margin: 90px;
+}
+.food{
+	width: 70%;
+	height: 70%;
+	border-radius: 10px;
+}
+.title{
+	color: white;
+	letter-spacing: 1px;
+}
+.description{
+	color: gray;
+	text-align: justify-all;
+	letter-spacing: 1px;
+	line-height: 30px;
+	margin: 30px;
+}
+.rate{
+  color: white;
+  letter-spacing: 1px;
+}
+ul{
+	color: #c49b63;
+	list-style-type: none;
+}
+ul li{
+	display: inline-block;
+	width: 50px;
+	border: 1px solid #c49b63;
+	padding: 8px 10px;
+	font-size: 18px;
+	font-family: "Arial Narrow";
+	margin: 2px;
+	cursor: pointer;
+}
+.addtocart{
+  border-style: solid;
+  border-color: #c49b63;
+  border-width: 1px;
+  border-collapse: separate;
+  color: #c49b63;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+  font-family: "Arial Narrow";
+}
+.addtocart:hover{
+  background-color: #c49b63;
+  color: black;
+  transition: 0.5s;
+}

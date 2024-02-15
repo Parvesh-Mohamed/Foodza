@@ -1,0 +1,66 @@
+/**::-webkit-scrollbar{
+    display: none;
+}*/
+body{
+  background-image: url("https://technext.github.io/coffee1/images/bg_4.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: "Arial Narrow";
+}
+.brand{
+  margin-top: 50px;
+  margin-left: 50px;
+  float: left;
+}
+.brandLogo{
+  margin-left: 120px;
+}
+.signUpFrame{
+  margin-right: 120px;
+  float: right;
+}
+div[class=navigationButtons] ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+div[class=navigationButtons] ul li{
+  display: table-cell;
+}
+div[class=navigationButtons] a{
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  overflow: inherit;
+  padding: 15px;
+  border-style: solid;
+  border-color: #c49b63;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: inline-block;
+  width: 165px;
+}
+div[class=navigationButtons] a:hover{
+  color: black;
+  background-color: #c49b63;
+  transition: 0.5s;
+}
+div[class=navigationButtons] a:focus{
+  color: black;
+  background-color: #c49b63;
+}
+div[class=navigationButtons] a:not(:focus){
+  color: #c49b63;
+  background-color: transparent;
+}
+iframe{
+  height: 300px;
+  width: 400px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+}
+iframe::-webkit-scrollbar{
+    display: none;
+}
